@@ -43,10 +43,6 @@ You can use either a session-based login or an OAuth header injection.
 cred = {
     'user': 'USER_ID',
     'pwd': 'PASSWORD',
-    'factor2': '2FA_PAN_OR_DOB',
-    'vc': 'VENDOR_CODE',
-    'apikey': 'API_KEY',
-    'imei': 'IMEI'
 }
 
 token = {
