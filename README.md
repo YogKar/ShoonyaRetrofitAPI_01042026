@@ -14,6 +14,7 @@ Then, install the library using the generated wheel file:
 
 ```bash
 pip install NorenRestApiPy-0.0.30-py2.py3-none-any.whl
+pip install --force-reinstall NorenRestApiPy-0.0.30-py2.py3-none-any.whl     for overwrite 
 ```
 
 ---
