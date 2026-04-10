@@ -45,7 +45,7 @@ class ShoonyaApiPy(NorenApi):
         NorenApi.__init__(
             self,
             host='https://api.shoonya.com/NorenWClientAPI/',
-            websocket='wss://api.shoonya.com/NorenWAPI/',
+            websocket='wss://api.shoonya.com/NorenWSAPI/',
             proxy=proxy
         )
 
