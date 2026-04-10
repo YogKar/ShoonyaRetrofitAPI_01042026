@@ -1,6 +1,5 @@
 from NorenRestApiPy.NorenApi import NorenApi
 from threading import Timer
-import pandas as pd
 import time
 import concurrent.futures
 
@@ -38,15 +37,11 @@ def get_time(time_string):
 
 
 class ShoonyaApiPy(NorenApi):
-    def __init__(self, proxy=None):
-        # old endpoints
-        # NorenApi.__init__(self, host='https://api.shoonya.com/NorenWClientTP/', websocket='wss://api.shoonya.com/NorenWSTP/', eodhost='https://shoonya.finvasia.com/chartApi/getdata/', proxy=proxy)
-        # new endpoints
+    def __init__(self):
         NorenApi.__init__(
             self,
             host='https://api.shoonya.com/NorenWClientAPI/',
-            websocket='wss://api.shoonya.com/NorenWSAPI/',
-            proxy=proxy
+            websocket='wss://api.shoonya.com/NorenWSAPI/'
         )
 
         global api
