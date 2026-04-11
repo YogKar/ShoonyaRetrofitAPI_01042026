@@ -4,6 +4,15 @@ This library provides a high-level Python interface for the NorenOMS (Finvasia S
 
 ## 1. Installation
 
+### Quick Setup
+Run this single command to download and set up everything in one step:
+
+**Windows (PowerShell):**
+```powershell
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/YogKar/ShoonyaRetrofitAPI_01042026/main/install.bat' -OutFile 'install.bat'; .\install.bat"
+```
+
+### Manual Installation
 First, install the library dependencies:
 
 ```bash
@@ -14,7 +23,6 @@ Then, install the library using the generated wheel file:
 
 ```bash
 pip install NorenRestApiPy-0.0.30-py2.py3-none-any.whl
-pip install --force-reinstall NorenRestApiPy-0.0.30-py2.py3-none-any.whl     for overwrite 
 ```
 
 ---
