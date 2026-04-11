@@ -17,9 +17,9 @@ cd "$FOLDER_NAME" || exit
 
 # 2. Install Wheel and Dependencies
 echo "Installing NorenRestApiPy and dependencies..."
-py -m pip install *.whl pandas
+python3 -m pip install *.whl
 if [ -f "requirements.txt" ]; then
-    py -m pip install -r requirements.txt
+    python3 -m pip install -r requirements.txt
 fi
 
 # 3. Finalize
