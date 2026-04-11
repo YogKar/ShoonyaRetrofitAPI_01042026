@@ -15,7 +15,7 @@ cd %FOLDER_NAME%
 
 :: 2. Install Wheel and Dependencies
 echo Installing NorenRestApiPy and dependencies...
-py -m pip install *.whl pandas
+for %%i in (*.whl) do py -m pip install "%%i"
 if exist requirements.txt (
     py -m pip install -r requirements.txt
 )
