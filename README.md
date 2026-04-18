@@ -36,7 +36,23 @@ pip install NorenRestApiPy-0.0.30-py2.py3-none-any.whl
 
 ---
 
-## 2. Initialization
+## 2. Automated Authentication Helpers
+
+Scripts to automate the Shoonya OAuth login process, generate the checksum, and retrieve the `access_token` automatically. These eliminate the need for manual browser-based login.
+
+### Playwright Version (Recommended)
+Fast and modern automation. Requires Playwright.
+- **File**: `GetOuthCodeChecksum_Playwright.py`
+- **Dependencies**: `pip install playwright pyotp requests`, followed by `playwright install chromium`
+
+### Selenium Version
+Standard automation using Chrome.
+- **File**: `GetOuthCodeChecksum_Selenium.py`
+- **Dependencies**: `pip install selenium webdriver-manager pyotp requests`
+
+---
+
+## 3. Initialization
 
 The library can be imported via `api_helper`. You have three class options for initialization:
 
@@ -52,7 +68,7 @@ api = ShoonyaApiPy()
 
 ---
 
-## 3. Authentication Variants
+## 4. Authentication Variants
 
 You can use either a session-based login or an OAuth header injection.
 
@@ -86,7 +102,7 @@ ret = api.set_session(
 
 ---
 
-## 4. WebSocket (Real-time Data)
+## 5. WebSocket (Real-time Data)
 
 To receive real-time updates, you must define callbacks and start the websocket.
 
@@ -115,7 +131,7 @@ api.start_websocket(
 )
 ```
 
-## 5. Common API Methods
+## 6. Common API Methods
 
 ### Get Account Margins/Limits
 
