@@ -13,11 +13,11 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
  
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-CLIENT_ID   = "FA79490_U"
-USER_ID     = "FA79490"
-PASSWORD    = "Varnit@61616"
-TOTP_SECRET = "6Z3TGU473AZ7ZU63JVAMELPZSI5GIO33" #YOUR base 32 TOTP STRING (From security totp option in trade.shoonya.com ) 
-SECRET_CODE = "Q63Xl76my8OMX6yFBrIlIblMRdIBjqN5YpXBiG4M3Onmop5XfbEx33pm2g7I8LP3" #Your api secret code (From API key button in trade.shoonya.com ) 
+CLIENT_ID   = ""
+USER_ID     = ""
+PASSWORD    = ""
+TOTP_SECRET = "" #YOUR base 32 TOTP STRING (From security totp option in trade.shoonya.com ) 
+SECRET_CODE = "" #Your api secret code (From API key button in trade.shoonya.com ) 
 LOGIN_URL   = f"https://trade.shoonya.com/OAuthlogin/investor-entry-level/login?api_key={CLIENT_ID}&route_to={USER_ID}+s+apikey"  # Change ABC  to your user ID 
 TOKEN_URL   = "https://trade.shoonya.com/NorenWClientAPI/GenAcsTok"
 # ──────────────────────────────────────────────────────────────────────────────
